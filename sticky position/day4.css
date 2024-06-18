@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    margin: 100px;
+    height: 500px;    
+}
+.child{
+    background-color: rgb(10, 19, 200);
+    height:40px;
+    width:40px;
+    position:sticky;
+    top: 50px;
+}
