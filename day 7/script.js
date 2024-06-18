@@ -3,7 +3,7 @@ const searchBar = document.getElementById('search-bar');
 
 let products = [];
 
-// Fetch products from the API
+
 const fetchProducts = (searchTerm = '') => {
     fetch(`https://dummyjson.com/products/search?q=${searchTerm}`)
         .then(response => {
@@ -21,7 +21,7 @@ const fetchProducts = (searchTerm = '') => {
         });
 };
 
-// Initial fetch to get all products
+
 fetchProducts();
 
 const renderUI = (products) => {
@@ -43,5 +43,5 @@ const handleSearch = (event) => {
     fetchProducts(searchTerm);
 };
 
-// Add event listener to the search bar
+
 searchBar.addEventListener('input', handleSearch);
